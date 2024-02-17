@@ -23,12 +23,7 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HealthCheck();
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            currentHealth = 0;
-        }
-       
+        HealthCheck();       
 
     }
 

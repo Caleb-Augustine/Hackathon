@@ -9,13 +9,14 @@ public class LevelSystem : MonoBehaviour
 
     public int playerLevel;
     public float currLevelProgress;
-    public float currLevelMax;
+    public float currLevelMax = 10f;
     public float exponentValue;
     public EnemySpawn enemyScript;
-    public TMP_Text LevelText;
-    public TMP_Text ExperienceText;
-    public Image ExperienceBar;
+    public TMP_Text levelText;
+    public TMP_Text experienceText;
+    public Image experienceBar;
     public LevelUpItems levelUpItems;
+
 
     // Start is called before the first frame update
     void Start()
@@ -24,14 +25,19 @@ public class LevelSystem : MonoBehaviour
         currLevelProgress = 0;
 
         levelUpItems = GameObject.FindGameObjectWithTag("LevelUpItems").GetComponent<LevelUpItems>();
+        
+
 
         // how much XP until next level
         currLevelMax = 10f;
-        exponentValue = 0.2f;      
+        exponentValue = 0.4f;      
 
-        LevelText.text = "Level : " + playerLevel.ToString();
-        ExperienceText.text = "0 / 10";
-        ExperienceBar.fillAmount = 0f;
+        // sets experience UI
+        levelText.text = "Level : " + playerLevel.ToString();
+        experienceText.text = "0 / 10";
+        experienceBar.fillAmount = 0f;
+
+        
         
     }
 
@@ -48,7 +54,7 @@ public class LevelSystem : MonoBehaviour
         {
             currLevelProgress -= currLevelMax;
             playerLevel++;
-            currLevelMax = (Mathf.Pow(currLevelMax, exponentValue) + currLevelMax);
+            currLevelMax = ((0.3f*currLevelMax) + currLevelMax);
 
             //Enemies spawn faster each level up
             if (enemyScript.spawnDelay > 0.5f)
@@ -60,8 +66,9 @@ public class LevelSystem : MonoBehaviour
         }
 
         // Update Experience UI
-        ExperienceText.text = (int)(currLevelProgress) + " / " + (int)(currLevelMax);
-        ExperienceBar.fillAmount = (currLevelProgress / currLevelMax);
-        LevelText.text = "Level : " + playerLevel.ToString();
+        experienceText.text = (int)(currLevelProgress) + " / " + (int)(currLevelMax);
+        experienceBar.fillAmount = (currLevelProgress / currLevelMax);
+        levelText.text = "Level : " + playerLevel.ToString();
+
     }
 }

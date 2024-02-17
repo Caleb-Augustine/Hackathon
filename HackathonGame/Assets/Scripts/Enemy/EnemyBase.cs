@@ -9,6 +9,8 @@ public class EnemyBase : MonoBehaviour
 
     int currentHealth;
 
+    public GameObject coin;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,16 +21,20 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        HealthCheck();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            currentHealth = 0;
+        }
     }
 
     public void HealthCheck()
     {
         if (currentHealth <= 0)
         {
-            //Spawn Coin function here.
+            Instantiate(coin, transform.position, transform.rotation);
             GetComponent<SpriteRenderer>().enabled = false;
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
         }
     }
 

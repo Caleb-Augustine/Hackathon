@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15d663d39a30054d8769c34aec1052d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: {fileID: 0}
+  enemyType: {fileID: 11400000, guid: 5a69ef5f167d1cf47bb20ada2e6ec8d7, type: 2}
+  coin: {fileID: 536638947036491674, guid: 7d27f9abbf4370643ba60f9d6a41a238, type: 3}
 --- !u!212 &5658810604007300434
 SpriteRenderer:
   m_ObjectHideFlags: 0

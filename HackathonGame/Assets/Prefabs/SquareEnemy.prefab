@@ -47,6 +47,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: {fileID: 11400000, guid: 5a69ef5f167d1cf47bb20ada2e6ec8d7, type: 2}
   currentHealth: 10
+  coin: {fileID: 536638947036491674, guid: 7d27f9abbf4370643ba60f9d6a41a238, type: 3}
+  squareEnemy: {fileID: 5146505139624414232}
+  enemySpeed: 0
+  minDist: 3
+  target: {fileID: 3991343338777626575, guid: bc49327acd21e4bd8a2fe6d5f32184d7, type: 3}
+  numOfEnemies: 0
+  spawnDistance: 0
 --- !u!212 &5658810604007300434
 SpriteRenderer:
   m_ObjectHideFlags: 0

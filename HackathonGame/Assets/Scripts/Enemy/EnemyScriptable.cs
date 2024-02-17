@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemyScriptable : ScriptableObject
 {
     [Tooltip("How much health an enemy has. This is an int.")]
-    public int enemyHealth;
+    public int enemyHealth = 10;
     [Tooltip("How far an enemy has to be before the attack starts. This is an int.")]
     public int enemyRange;
     [Tooltip("The amount of damage an enemy will do to the player. This is an int.")]

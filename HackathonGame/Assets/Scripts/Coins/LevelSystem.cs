@@ -9,6 +9,7 @@ public class LevelSystem : MonoBehaviour
     public float currLevelProgress;
     public float currLevelMax;
     public float exponentValue;
+    public EnemySpawn enemyScript;
     
 
     // Start is called before the first frame update
@@ -33,6 +34,11 @@ public class LevelSystem : MonoBehaviour
         if (currLevelProgress >= currLevelMax)
         {
             playerLevel++;
+            if (enemyScript.spawnDelay > 0.5f)
+            {
+                enemyScript.spawnDelay -= 0.5f;
+            }
+            enemyScript.SpawnEnemies();
             currLevelProgress -= currLevelMax;
 
             currLevelMax = (Mathf.Pow(currLevelMax, exponentValue) + currLevelMax);

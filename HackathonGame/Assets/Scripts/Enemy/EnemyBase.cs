@@ -12,10 +12,12 @@ public class EnemyBase : MonoBehaviour
 
     public GameObject coin;
 
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = enemyType.enemyHealth;
+
     }
 
     // Update is called once per frame
@@ -26,6 +28,8 @@ public class EnemyBase : MonoBehaviour
         {
             currentHealth = 0;
         }
+       
+
     }
 
     public void HealthCheck()
@@ -37,4 +41,6 @@ public class EnemyBase : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    
 }

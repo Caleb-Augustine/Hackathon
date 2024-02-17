@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06ad4442098cc442840adddfbdf38cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 0
+  coinValue: 1
   levelScript: {fileID: 0}
 --- !u!58 &1835600445410914540
 CircleCollider2D:

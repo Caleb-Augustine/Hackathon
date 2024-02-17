@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: {fileID: 11400000, guid: 5a69ef5f167d1cf47bb20ada2e6ec8d7, type: 2}
-  currentHealth: 0
+  currentHealth: 10
 --- !u!212 &5658810604007300434
 SpriteRenderer:
   m_ObjectHideFlags: 0

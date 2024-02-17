@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 159307136984830181, guid: f81de01c2f7d9d64ca73a1dd64269da8, type: 3}
+      propertyPath: bulletFireSpeed
+      value: 50000
+      objectReference: {fileID: 0}
     - target: {fileID: 2521321367266185591, guid: f81de01c2f7d9d64ca73a1dd64269da8, type: 3}
       propertyPath: m_Name
       value: Player

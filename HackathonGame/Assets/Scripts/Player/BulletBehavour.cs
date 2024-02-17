@@ -2,12 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBehavour : MonoBehaviour
+public class BulletBehavour : PlayerBullets
 {
     public string targetTag;
-
-    public int bulletDamage;
-    public float bulletTimeAlive;
     float currentTime;
 
 

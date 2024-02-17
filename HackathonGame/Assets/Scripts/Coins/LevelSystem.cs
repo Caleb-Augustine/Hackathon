@@ -15,13 +15,15 @@ public class LevelSystem : MonoBehaviour
     public TMP_Text LevelText;
     public TMP_Text ExperienceText;
     public Image ExperienceBar;
-    
+    public LevelUpItems levelUpItems;
 
     // Start is called before the first frame update
     void Start()
     {
         playerLevel = 1;
         currLevelProgress = 0;
+
+        levelUpItems = GameObject.FindGameObjectWithTag("LevelUpItems").GetComponent<LevelUpItems>();
 
         // how much XP until next level
         currLevelMax = 10f;
@@ -54,7 +56,7 @@ public class LevelSystem : MonoBehaviour
                 enemyScript.spawnDelay -= 0.5f;
             }
             
-
+            levelUpItems.isPause = true;
         }
 
         // Update Experience UI

@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerSpeedItem : MonoBehaviour
+public class PlayerBullets : MonoBehaviour
 {
+    public int bulletDamage;
+    public float bulletTimeAlive;
     // Start is called before the first frame update
     void Start()
     {

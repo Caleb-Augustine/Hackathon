@@ -6,18 +6,29 @@ using TMPro;
 
 public class LevelUpItems : MonoBehaviour
 {
+    public GameObject levelUpItems;
     public PlayerHealth playerH;
+    public PlayerMovement playerM;
+    public PlayerBullets bulletB;
+    public PlayerFire playerF;
+    public bool isPause = false;
     // Start is called before the first frame update
     void Start()
     {
-       Time.timeScale = 0; 
-       playerH = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        isPause = false;
+        playerH = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        playerM = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        bulletB = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBullets>();
+        playerF = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFire>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (isPause) {
+            Time.timeScale = 0; 
+            levelUpItems.SetActive(true);
+        }
     }
 
 
@@ -28,21 +39,37 @@ public class LevelUpItems : MonoBehaviour
         float playerHealth = playerH.playerHealth;
         int currHealth = (int) (ratio * playerHealth);
         playerH.currHealth = currHealth;
+        resumeGame();
     }
     
     public void SpeedButton() {
-
+        playerM.playerSpeed += 0.25f;
+        resumeGame();
     }
 
     public void ShootDamageButton() {
-
+        bulletB.bulletDamage += 2;
+        resumeGame();
     }
 
     public void ShootSpeedButton() {
-
+        playerF.bulletFireSpeed += 0.25f;
+        resumeGame();
     }
 
-    public void ShootTimeButton() {
+    public void ShootLifeButton() {
+        bulletB.bulletTimeAlive += 0.25f;
+        resumeGame();
+    }
 
+    public void ShootRateButton() {
+        playerF.bulletFireTime += 0.25f;
+        resumeGame();
+    }
+
+    public void resumeGame() {
+        levelUpItems.SetActive(false);
+        isPause = false;
+        Time.timeScale = 1.0f;
     }
 }

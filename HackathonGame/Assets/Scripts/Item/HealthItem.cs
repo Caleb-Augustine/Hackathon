@@ -7,6 +7,7 @@ public class HealthItem : MonoBehaviour
 
     [Tooltip("This is the percent that is added to health. This is a float.")]
     public float modPercent = 0.1f;
+    public int numPicked;
     public PlayerHealth playerH;
     // Start is called before the first frame update
     void Start()

@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     [Tooltip("This is the player speed. This is a float.")]
     public float playerSpeed;
 
+    public Vector3 mousePos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,23 @@ public class PlayerMovement : MonoBehaviour
         }
 
         #endregion
+
+
+        Vector2 mouseScreenPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector2 direction = (mouseScreenPos - (Vector2)transform.position).normalized;
+
+        transform.up = -direction;
+
+        /*
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        Quaternion rot = Quaternion.LookRotation(transform.position - mousePos, Vector3.down);
+        transform.rotation = rot;
+        transform.eulerAngles = new Vector3(0, 0, transform.eulerAngles.z);
+
+        */
 
     }
 }

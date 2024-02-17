@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyBase : MonoBehaviour
@@ -7,7 +8,7 @@ public class EnemyBase : MonoBehaviour
 
     public EnemyScriptable enemyType;
 
-    int currentHealth;
+    public int currentHealth;
 
 
     // Start is called before the first frame update
@@ -19,7 +20,7 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+     
     }
 
     public void HealthCheck()
@@ -31,6 +32,4 @@ public class EnemyBase : MonoBehaviour
             Destroy(gameObject, 1f);
         }
     }
-
-
 }

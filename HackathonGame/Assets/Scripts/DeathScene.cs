@@ -25,7 +25,7 @@ public class DeathScene : MonoBehaviour
         playerH = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         playerM = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerF = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFire>();
-        bulletB = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBullets>();
+        playerB = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBullets>();
     }
 
     // Update is called once per frame

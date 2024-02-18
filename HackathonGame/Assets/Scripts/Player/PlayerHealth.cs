@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
      
         if(currHealth <= 0)
         {
+            gameObject.SetActive(false); //Setting the player inactive to allow the death screen to spawn.
             //Play End Screen
         }
         

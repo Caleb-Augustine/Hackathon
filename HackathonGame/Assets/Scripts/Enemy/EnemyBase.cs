@@ -11,16 +11,14 @@ public class EnemyBase : MonoBehaviour
     public int currentHealth;
     public GameObject coin;
 
-    public EnemyScriptable enemyScript;
     int enemyDamage;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyDamage = enemyScript.enemyDamage;
+        enemyDamage = enemyType.enemyDamage;
         currentHealth = enemyType.enemyHealth;
 
-        //currentHealth = 1;
     }
 
     // Update is called once per frame

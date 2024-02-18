@@ -65,7 +65,6 @@ public class LevelSystem : MonoBehaviour
             }
             
             levelUpItems.isPause = true;
-            deathScene.isPause = true
             increaseEnemy();
         }
 

@@ -7,10 +7,10 @@ public class Timer : MonoBehaviour
     public TMP_Text timerText;
     private float timer;
     public TMP_Text lastUpdatedTimer;
-    public PlayerHealth currHealth;
+    public PlayerHealth healthScript;
     void Start(){
         timer = 0f;
-        currHealth = FindGameObjectWithTag("Player".GetComponent<"PlayerHealth">();
+        healthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         RectTransform rectTransform = timerText.GetComponent<RectTransform>();
         rectTransform.anchorMin = new Vector2(1f, 1f);
         rectTransform.anchorMax = new Vector2(1f, 1f);
@@ -19,8 +19,8 @@ public class Timer : MonoBehaviour
 
     void Update(){
         timer += Time.deltaTime;
-        if(currHealth == 0){
-               lastUpdatedTimer = string.Format("{0:00}:{1:00}", Mathf.Floor(timer / 60), timer % 60);
+        if(healthScript.currHealth == 0){
+               lastUpdatedTimer = string.Format("{0:00}:{1:00}", (string)(Mathf.Floor(timer / 60)), (string)(timer % 60));
 //             Display game over menu
         }
         UpdateTimerDisplay();

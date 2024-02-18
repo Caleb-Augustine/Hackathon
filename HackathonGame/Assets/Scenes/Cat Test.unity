@@ -677,6 +677,7 @@ MonoBehaviour:
   levelS: {fileID: 0}
   playerH: {fileID: 0}
   healthText: {fileID: 749049111}
+  timer: {fileID: 0}
   playerM: {fileID: 0}
   playerF: {fileID: 0}
   playerB: {fileID: 0}
@@ -747,7 +748,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3239182948518489471, guid: ad813fa926de1b34386d1f41d4ac615b, type: 3}
       insertIndex: 2
+      addedObject: {fileID: 1922779535}
+    - targetCorrespondingSourceObject: {fileID: 3239182948518489471, guid: ad813fa926de1b34386d1f41d4ac615b, type: 3}
+      insertIndex: 3
       addedObject: {fileID: 1922779533}
+    - targetCorrespondingSourceObject: {fileID: 3239182948518489471, guid: ad813fa926de1b34386d1f41d4ac615b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922779534}
   m_SourcePrefab: {fileID: 100100000, guid: ad813fa926de1b34386d1f41d4ac615b, type: 3}
 --- !u!1 &1729488712 stripped
 GameObject:
@@ -787,9 +794,44 @@ MonoBehaviour:
   levelS: {fileID: 0}
   playerH: {fileID: 0}
   healthText: {fileID: 0}
+  timer: {fileID: 0}
   playerM: {fileID: 0}
   playerF: {fileID: 0}
   playerB: {fileID: 0}
+--- !u!114 &1922779534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341785578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b2eab1a0c224bd28939d97ef10795c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  timer: 0
+  lastUpdatedTimer: {fileID: 0}
+  healthScript: {fileID: 0}
+--- !u!114 &1922779535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341785578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88356b1a955d45be991efa72a33b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpItems: {fileID: 1729488712}
+  isPause: 0
+  playerH: {fileID: 0}
+  playerM: {fileID: 0}
+  bulletB: {fileID: 0}
+  playerF: {fileID: 0}
 --- !u!1001 &5180113056617335819
 PrefabInstance:
   m_ObjectHideFlags: 0

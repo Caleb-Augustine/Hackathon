@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 687800698664777639}
   - component: {fileID: 6048376265955221695}
+  - component: {fileID: 5632679982277552624}
   - component: {fileID: 4975605240835580243}
   m_Layer: 0
   m_Name: game manager
@@ -54,6 +55,25 @@ MonoBehaviour:
   experienceText: {fileID: 0}
   experienceBar: {fileID: 0}
   levelUpItems: {fileID: 0}
+  enemyS: {fileID: 0}
+--- !u!114 &5632679982277552624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239182948518489471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88356b1a955d45be991efa72a33b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpItems: {fileID: 2799535067821263338, guid: 7d77ae79dce134cf6b10856c99ff1220, type: 3}
+  isPause: 0
+  playerH: {fileID: 0}
+  playerM: {fileID: 0}
+  bulletB: {fileID: 0}
+  playerF: {fileID: 0}
 --- !u!114 &4975605240835580243
 MonoBehaviour:
   m_ObjectHideFlags: 0

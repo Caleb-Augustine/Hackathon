@@ -10,14 +10,16 @@ public class EnemyBase : MonoBehaviour
 
     public int currentHealth;
     public GameObject coin;
-    public int enemyDamage;
+
+    public EnemyScriptable enemyScript;
+    int enemyDamage;
 
     // Start is called before the first frame update
     void Start()
     {
-        enemyType = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyScriptable>();
+        enemyDamage = enemyScript.enemyDamage;
         currentHealth = enemyType.enemyHealth;
-        enemyDamage = 1;
+
         //currentHealth = 1;
     }
 

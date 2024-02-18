@@ -16,7 +16,7 @@ public class LevelSystem : MonoBehaviour
     public TMP_Text experienceText;
     public Image experienceBar;
     public LevelUpItems levelUpItems;
-    public DeathScene deathScene;
+
     public EnemyScriptable enemyS;
 
     // Start is called before the first frame update
@@ -27,8 +27,7 @@ public class LevelSystem : MonoBehaviour
 
         levelUpItems = GameObject.FindGameObjectWithTag("LevelUpItems").GetComponent<LevelUpItems>();
         enemyS = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyScriptable>();
-
-
+        
         // how much XP until next level
         currLevelMax = 10f;
         exponentValue = 0.4f;      

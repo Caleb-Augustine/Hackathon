@@ -30,6 +30,7 @@ public class BulletBehavour : PlayerBullets
     {
         if (col.gameObject.CompareTag(targetTag))
         {
+            Debug.Log("Hit Target Tag");
             int enemyHealth = col.transform.gameObject.GetComponent<EnemyBase>().currentHealth;
             enemyHealth -= bulletDamage;
         }

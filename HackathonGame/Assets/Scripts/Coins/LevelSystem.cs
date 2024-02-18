@@ -44,6 +44,7 @@ public class LevelSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //To delete soon
         if (Input.GetKeyDown(KeyCode.Space))
         {
             currLevelProgress += 2;

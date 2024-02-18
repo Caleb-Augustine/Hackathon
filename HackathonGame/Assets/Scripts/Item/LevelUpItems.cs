@@ -7,11 +7,15 @@ using TMPro;
 public class LevelUpItems : MonoBehaviour
 {
     public GameObject levelUpItems;
+    public bool isPause = false;
+
+    //Script Calls
+    //Because these are set in script, they do not need to be public
     public PlayerHealth playerH;
     public PlayerMovement playerM;
     public PlayerBullets bulletB;
     public PlayerFire playerF;
-    public bool isPause = false;
+
     // Start is called before the first frame update
     void Start()
     {

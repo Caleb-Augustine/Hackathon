@@ -47,9 +47,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerLevel: 0
   currLevelProgress: 0
-  currLevelMax: 0
-  exponentValue: 0
+  currLevelMax: 10
+  exponentValue: 0.4
   enemyScript: {fileID: 0}
+  levelText: {fileID: 0}
+  experienceText: {fileID: 0}
+  experienceBar: {fileID: 0}
+  levelUpItems: {fileID: 0}
 --- !u!114 &4975605240835580243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,10 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0ffafda93c2d644b7ef0f5ea50dfb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  squareEnemy: {fileID: 0}
-  minDist: 3
-  numOfEnemies: 0
-  spawnDistance: 0
+  squareEnemy: {fileID: 5146505139624414232, guid: d32be4614b1e4654fab2b32b7f454534, type: 3}
   spawnLocations:
   - {fileID: 0}
   - {fileID: 0}
@@ -77,3 +78,27 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  randomPoint: 0
+  spawnDelay: 0

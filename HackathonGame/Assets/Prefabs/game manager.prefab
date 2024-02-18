@@ -10,7 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 687800698664777639}
   - component: {fileID: 6048376265955221695}
+<<<<<<< Updated upstream
   - component: {fileID: 5632679982277552624}
+=======
+  - component: {fileID: 5985801921012314704}
+>>>>>>> Stashed changes
   - component: {fileID: 4975605240835580243}
   m_Layer: 0
   m_Name: game manager
@@ -55,8 +59,13 @@ MonoBehaviour:
   experienceText: {fileID: 0}
   experienceBar: {fileID: 0}
   levelUpItems: {fileID: 0}
+<<<<<<< Updated upstream
   enemyS: {fileID: 0}
 --- !u!114 &5632679982277552624
+=======
+  enemyScriptable: {fileID: 11400000, guid: 5a69ef5f167d1cf47bb20ada2e6ec8d7, type: 2}
+--- !u!114 &5985801921012314704
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65,6 +74,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3239182948518489471}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: e88356b1a955d45be991efa72a33b715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -74,6 +84,14 @@ MonoBehaviour:
   playerM: {fileID: 0}
   bulletB: {fileID: 0}
   playerF: {fileID: 0}
+=======
+  m_Script: {fileID: 11500000, guid: 64ce8d5fa8e6a58499d081a19495944c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 0}
+  healthBar: {fileID: 0}
+  healthScript: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!114 &4975605240835580243
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using JetBrains.Annotations;
 
 public class LevelSystem : MonoBehaviour
 {
@@ -12,22 +13,33 @@ public class LevelSystem : MonoBehaviour
     public float currLevelMax = 10f;
     public float exponentValue;
     public EnemySpawn enemyScript;
+
     public TMP_Text levelText;
     public TMP_Text experienceText;
     public Image experienceBar;
     public LevelUpItems levelUpItems;
+<<<<<<< Updated upstream
     public DeathScene deathScene;
     public EnemyScriptable enemyS;
+=======
+
+
+    #region Enemy Leveling Up
+
+    public EnemyScriptable enemyScriptable;
+
+    #endregion
+
+>>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
     {
         playerLevel = 1;
         currLevelProgress = 0;
-
+        
+        enemyScript = GetComponent<EnemySpawn>();
         levelUpItems = GameObject.FindGameObjectWithTag("LevelUpItems").GetComponent<LevelUpItems>();
-        enemyS = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemyScriptable>();
-
 
         // how much XP until next level
         currLevelMax = 10f;
@@ -37,8 +49,6 @@ public class LevelSystem : MonoBehaviour
         levelText.text = "Level : " + playerLevel.ToString();
         experienceText.text = "0 / 10";
         experienceBar.fillAmount = 0f;
-
-        
         
     }
 
@@ -65,7 +75,10 @@ public class LevelSystem : MonoBehaviour
             }
             
             levelUpItems.isPause = true;
-            increaseEnemy();
+
+            //Increase Enemy
+            IncreaseEnemy();
+
         }
 
         // Update Experience UI
@@ -75,9 +88,10 @@ public class LevelSystem : MonoBehaviour
 
     }
 
-    public void increaseEnemy() {
-        enemyS.enemyHealth += 5;
-        enemyS.enemyDamage += 3;
-        enemyS.coinDropAmount += 1;
+    public void IncreaseEnemy()
+    {
+        enemyScriptable.enemyHealth++;
+        enemyScriptable.enemyDamage++;
+        enemyScriptable.coinDropAmount++;
     }
 }

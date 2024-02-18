@@ -59,9 +59,9 @@ public class LevelSystem : MonoBehaviour
             currLevelMax = ((0.3f*currLevelMax) + currLevelMax);
 
             //Enemies spawn faster each level up
-            if (enemyScript.spawnDelay > 0.5f)
+            if (enemyScript.spawnDelay > 1f)
             {
-                enemyScript.spawnDelay -= 0.5f;
+                enemyScript.spawnDelay -= 1f;
             }
             
             levelUpItems.isPause = true;

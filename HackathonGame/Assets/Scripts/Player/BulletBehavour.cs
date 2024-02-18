@@ -35,6 +35,7 @@ public class BulletBehavour : PlayerBullets
         {
             Debug.Log("Hit Target Tag");
             enemyScript.currentHealth -= bulletDamage;
+            Destroy(gameObject);
         }
     }
 

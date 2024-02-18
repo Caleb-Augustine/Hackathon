@@ -9,6 +9,7 @@ public class HealthUI : MonoBehaviour
 
     public TMP_Text healthText;
     public Image healthBar;
+
     public PlayerHealth healthScript;
 
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class HealthUI : MonoBehaviour
         // sets health UI
         healthText.text = "0 / 10";
         healthBar.fillAmount = 1f;
+        
     }
 
     // Update is called once per frame
@@ -28,6 +30,6 @@ public class HealthUI : MonoBehaviour
 
         // Update Health UI
         healthText.text = (int)(healthScript.currHealth) + " / " + (int)(healthScript.playerHealth);
-        healthBar.fillAmount = (healthScript.currHealth / healthScript.playerHealth);
+        healthBar.fillAmount = ((float)healthScript.currHealth / (float)healthScript.playerHealth);
     }
 }

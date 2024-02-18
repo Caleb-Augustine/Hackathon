@@ -17,5 +17,12 @@ public class EnemyScriptable : ScriptableObject
     public GameObject enemyPrefab;
 
 
+    public void IncreaseEnemy()
+    {
+        enemyHealth++;
+        enemyDamage += 2;
+        coinDropAmount++;
+    }
 
+    
 }

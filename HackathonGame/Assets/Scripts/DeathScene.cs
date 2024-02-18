@@ -61,6 +61,5 @@ public class DeathScene : MonoBehaviour
     public void QuitButton() {
         deathScene.SetActive(false);
         Application.Quit();
-        Debug.Log("quit");
     }
 }

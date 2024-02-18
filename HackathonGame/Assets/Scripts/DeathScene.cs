@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class DeathScene : MonoBehaviour
 {
     public GameObject deathScene;
     public bool isPause;
     //player health
     public PlayerHealth playerH;
+    public Text healthText;
     //player movement ???
     public PlayerMovement playerM;
     //bulletFireSpeed bulletFireTime
@@ -31,7 +34,12 @@ public class DeathScene : MonoBehaviour
         if (isPause) {
             Time.timeScale = 0; 
             deathScene.SetActive(true);
+            showValues();
         }
+    }
+
+    public void showValues() {
+        healthText.text = "Max Health: " + playerH.playerHealth.ToString();
     }
 
     public void MainMenuButton() {

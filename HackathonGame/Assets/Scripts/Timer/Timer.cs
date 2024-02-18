@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
     void Update(){
         timer += Time.deltaTime;
         if(healthScript.currHealth == 0){
-               lastUpdatedTimer = string.Format("{0:00}:{1:00}", (string)(Mathf.Floor(timer / 60)), (string)(timer % 60));
+               lastUpdatedTimer.text = string.Format("{0:00}:{1:00}", Mathf.Floor(timer / 60), timer % 60);
 //             Display game over menu
         }
         UpdateTimerDisplay();

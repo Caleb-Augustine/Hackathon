@@ -18,10 +18,10 @@ public class LevelSystem : MonoBehaviour
     public TMP_Text experienceText;
     public Image experienceBar;
     public LevelUpItems levelUpItems;
-<<<<<<< Updated upstream
+
     public DeathScene deathScene;
     public EnemyScriptable enemyS;
-=======
+
 
 
     #region Enemy Leveling Up
@@ -30,7 +30,7 @@ public class LevelSystem : MonoBehaviour
 
     #endregion
 
->>>>>>> Stashed changes
+
 
     // Start is called before the first frame update
     void Start()

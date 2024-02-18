@@ -38,8 +38,8 @@ public class DeathScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPause) {
-            Time.timeScale = 0; 
+        if (playerH.currHealth <= 0) {
+            Time.timeScale = 0f; 
             deathScene.SetActive(true);
             showValues();
         }

@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7909487160738469154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404618926217661108}
+  - component: {fileID: 7012960958324125336}
+  - component: {fileID: 4224540309437158349}
+  - component: {fileID: 1886648499549255267}
+  - component: {fileID: 4728388443294475193}
+  - component: {fileID: 6712304108088577004}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404618926217661108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7012960958324125336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b2eab1a0c224bd28939d97ef10795c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  timer: 0
+  lastUpdatedTimer: {fileID: 0}
+  healthScript: {fileID: 0}
+--- !u!114 &4224540309437158349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d3d2a9376141aa9c1ca3fec9b1fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathScene: {fileID: 0}
+  isPause: 0
+  levelS: {fileID: 0}
+  playerH: {fileID: 0}
+  healthText: {fileID: 0}
+  timer: {fileID: 0}
+  playerM: {fileID: 0}
+  playerF: {fileID: 0}
+  playerB: {fileID: 0}
+--- !u!114 &1886648499549255267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f148af16969b2ff47942f7a6cd64bad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLevel: 0
+  currLevelProgress: 0
+  currLevelMax: 10
+  exponentValue: 0.4
+  enemyScript: {fileID: 0}
+  levelText: {fileID: 0}
+  experienceText: {fileID: 0}
+  experienceBar: {fileID: 0}
+  levelUpItems: {fileID: 0}
+  deathScene: {fileID: 0}
+  enemyS: {fileID: 11400000, guid: 5a69ef5f167d1cf47bb20ada2e6ec8d7, type: 2}
+  enemyScriptable: {fileID: 0}
+--- !u!114 &4728388443294475193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e88356b1a955d45be991efa72a33b715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelUpItems: {fileID: 2799535067821263338, guid: 7d77ae79dce134cf6b10856c99ff1220, type: 3}
+  isPause: 0
+  playerH: {fileID: 0}
+  playerM: {fileID: 0}
+  bulletB: {fileID: 0}
+  playerF: {fileID: 0}
+--- !u!114 &6712304108088577004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7909487160738469154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0ffafda93c2d644b7ef0f5ea50dfb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  squareEnemy: {fileID: 5146505139624414232, guid: d32be4614b1e4654fab2b32b7f454534, type: 3}
+  spawnLocations:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  randomPoint: 0
+  spawnDelay: 0

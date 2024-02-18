@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5475f29c1311d240bdd26004204d753, type: 3}
   m_Name: EnemyType1
   m_EditorClassIdentifier: 
-  enemyHealth: 5
-  enemyRange: 5
+  enemyHealth: 1
+  enemyRange: 100
   enemyDamage: 1
   coinDropAmount: 1
   enemyPrefab: {fileID: 5146505139624414232, guid: d32be4614b1e4654fab2b32b7f454534, type: 3}

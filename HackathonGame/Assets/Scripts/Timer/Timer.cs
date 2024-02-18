@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public TMP_Text timerText;
-    private float timer;
+    public float timer;
     public TMP_Text lastUpdatedTimer;
     public PlayerHealth healthScript;
     void Start(){

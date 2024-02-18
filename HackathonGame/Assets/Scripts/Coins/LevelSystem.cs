@@ -16,6 +16,7 @@ public class LevelSystem : MonoBehaviour
     public TMP_Text experienceText;
     public Image experienceBar;
     public LevelUpItems levelUpItems;
+    public DeathScene deathScene;
     public EnemyScriptable enemyS;
 
     // Start is called before the first frame update
@@ -64,6 +65,7 @@ public class LevelSystem : MonoBehaviour
             }
             
             levelUpItems.isPause = true;
+            deathScene.isPause = true
             increaseEnemy();
         }
 

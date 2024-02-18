@@ -26,7 +26,7 @@ public class DeathScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isPause = true;
+        isPause = false;
         playerH = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         playerM = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         playerF = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerFire>();

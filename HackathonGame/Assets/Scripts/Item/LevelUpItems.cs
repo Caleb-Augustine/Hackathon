@@ -30,6 +30,7 @@ public class LevelUpItems : MonoBehaviour
     void Update()
     {
         if (isPause) {
+            Debug.Log("hi");
             Time.timeScale = 0; 
             levelUpItems.SetActive(true);
         }
